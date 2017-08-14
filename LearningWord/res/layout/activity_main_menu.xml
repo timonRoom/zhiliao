@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/iv_meum_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/menu_image" />
+
+    <RadioGroup
+        android:id="@+id/rg_radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/rb_zihu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/menu_radiobutton_bc_selector"
+            android:button="@null"
+            android:drawableRight="@drawable/zhihu"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:text="知乎日报"
+            android:textColor="@color/radiobutton_textcolor"
+            android:textSize="20sp" />
+            <RadioButton
+            android:id="@+id/rb_news"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:button="@null"
+            android:drawableRight="@drawable/news"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:text="新闻速递"
+            android:textColor="@color/radiobutton_textcolor"
+            android:background="@drawable/menu_radiobutton_bc_selector"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rb_kankan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:button="@null"
+            android:drawableRight="@drawable/gank"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:text="妹  纸"
+            android:textColor="@color/radiobutton_textcolor"
+            android:background="@drawable/menu_radiobutton_bc_selector"
+            android:textSize="20sp" />
+
+    
+    </RadioGroup>
+
+</LinearLayout>

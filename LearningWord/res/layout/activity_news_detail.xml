@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+	 <include 
+        android:id="@+id/include_deflault"
+        layout="@layout/view_deflault_before_dataloading"
+        />
+    <LinearLayout
+        android:id="@+id/ll_news_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:alpha="0.5"
+        android:background="#e0000000"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_news_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/simple_back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="新闻详情"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@id/ll_news_title"
+        android:id="@+id/tv_news_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+</RelativeLayout>
